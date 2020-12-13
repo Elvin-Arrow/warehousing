@@ -32,7 +32,7 @@ for fn in flightNum:
     code = source[count]['code']
     dcode = destination[count]['code']
     dist = distance[count]
-    dur = minutes(duration[count]['hour'], duration[count]['minutes'])
+    dur = minutes(duration[count]['hours'], duration[count]['minutes'])
     flightNumber.append({"flightNumber": fn, "originAirport": code, "destinationAirport": dcode, "distance": dist})
     count = count + 1
 print(flightNumber)
